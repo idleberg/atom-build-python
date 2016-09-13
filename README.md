@@ -43,7 +43,9 @@ Before you can build, select an active target with your preferred build option.
 
 Available targets:
 
-* `Python` — compile script (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>)
+* `Python` — compile script
+* `Python (compileall)` — compile script with `-m compileall`
+* `Python (compileall, optimized)` — compile script with `-O -m compileall`
 
 ### Shortcuts
 
