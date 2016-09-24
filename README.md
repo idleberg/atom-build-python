@@ -35,6 +35,13 @@ Clone repository as `build-python`:
 $ git clone https://github.com/idleberg/atom-build-python build-python
 ```
 
+Install Node dependencies:
+
+```bash
+cd build-python
+npm install
+```
+
 ## Usage
 
 ### Build
