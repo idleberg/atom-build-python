@@ -39,7 +39,7 @@ Install Node dependencies:
 
 ```bash
 $ cd build-python
-$ npm install
+$ yarn || npm install
 ```
 
 ## Usage
