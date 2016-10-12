@@ -35,10 +35,9 @@ Clone repository as `build-python`:
 $ git clone https://github.com/idleberg/atom-build-python build-python
 ```
 
-Install Node dependencies:
+Inside the cloned directory, install Node dependencies:
 
 ```bash
-$ cd build-python
 $ yarn || npm install
 ```
 
