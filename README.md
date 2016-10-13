@@ -17,7 +17,7 @@ Install `build-python` from Atom's [Package Manager](http://flight-manual.atom.i
 
 `$ apm install build-python`
 
-### GitHub
+### Using Git
 
 Change to your Atom packages directory:
 
