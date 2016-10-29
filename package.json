@@ -1,13 +1,14 @@
 {
   "name": "build-python",
   "version": "0.4.1",
-  "description": "Atom Build provider for python, compiles Python",
+  "description": "Atom Build provider for python/python3, compiles Python",
   "repository": "https://github.com/idleberg/atom-build-python",
   "license": "MIT",
   "keywords": [
     "build",
     "compile",
     "python",
+    "python3",
     "linter",
     "lint"
   ],

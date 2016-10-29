@@ -7,7 +7,7 @@
 [![David](https://img.shields.io/david/idleberg/atom-build-python.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-python)
 [![David](https://img.shields.io/david/dev/idleberg/atom-build-python.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-python?type=dev)
 
-[Atom Build](https://atombuild.github.io/) provider for `python`, compiles Python. Supports the [linter](https://atom.io/packages/linter) package for error highlighting.
+[Atom Build](https://atombuild.github.io/) provider for `python`/`python3`, compiles Python. Supports the [linter](https://atom.io/packages/linter) package for error highlighting.
 
 ## Installation
 
