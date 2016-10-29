@@ -54,6 +54,8 @@ Available targets:
 * `Python (compileall, optimized)` — compile script with `-O -m compileall`
 * `Python (user)` — compile script with arguments specified in the package settings
 
+The package settings allow you to specify your preferred version of `python`.
+
 ### Shortcuts
 
 Here's a reminder of the default shortcuts you can use with this package:
