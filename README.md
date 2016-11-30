@@ -52,7 +52,7 @@ Available targets:
 * `Python` — compile script
 * `Python (compileall)` — compile script with `-m compileall`
 * `Python (compileall, optimized)` — compile script with `-O -m compileall`
-* `Python (user)` — compile script with custom interpreter and/or arguments
+* `Python (user)` — compile script with custom interpreter and/or custom arguments
 
 The package settings allow you to specify your preferred version of `python` or a custom interpreter (e.g. `abaqus`)
 
