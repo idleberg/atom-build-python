@@ -54,8 +54,6 @@ Available targets:
 * `Python (compileall, optimized)` — compile script with `-O -m compileall`
 * `Python (user)` — compile script with custom interpreter and/or custom arguments
 
-The package settings allow you to specify your preferred version of `python` or a custom interpreter (e.g. `abaqus`)
-
 ### Shortcuts
 
 Here's a reminder of the default shortcuts you can use with this package:
