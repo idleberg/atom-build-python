@@ -52,7 +52,7 @@ Available targets:
 * `Python` — compile script
 * `Python (compileall)` — compile script with `-m compileall`
 * `Python (compileall, optimized)` — compile script with `-O -m compileall`
-* `Python (user)` — compile script with custom interpreter and/or custom arguments
+* `Python (user)` — compile script with custom settings (interpreter and/or arguments)
 
 ### Shortcuts
 
