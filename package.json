@@ -5,7 +5,7 @@
   "repository": "https://github.com/idleberg/atom-build-python",
   "license": "MIT",
   "keywords": [
-    "build",
+    "build-provider",
     "compile",
     "python",
     "python3",
@@ -25,7 +25,7 @@
     }
   },
   "package-deps": [
-    "build"
+    "build-provider"
   ],
   "dependencies": {
     "atom-package-deps": "^4.3.1"
