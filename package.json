@@ -5,7 +5,7 @@
   "repository": "https://github.com/idleberg/atom-build-python",
   "license": "MIT",
   "keywords": [
-    "build-provider",
+    "buildprovider",
     "compile",
     "python",
     "python3",
