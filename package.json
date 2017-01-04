@@ -1,6 +1,6 @@
 {
   "name": "build-python",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Atom Build provider for python/python3, compiles Python",
   "repository": "https://github.com/idleberg/atom-build-python",
   "license": "MIT",
