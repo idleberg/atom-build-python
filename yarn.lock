@@ -832,7 +832,7 @@ exit-hook@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/exit-hook/-/exit-hook-1.1.1.tgz#f05ca233b48c05d54fff07765df8507e95c02ff8"
 
-exit@0.1.2, exit@0.1.x, exit@^0.1.2:
+exit@0.1.2, exit@0.1.x:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/exit/-/exit-0.1.2.tgz#0632638f8d877cc82107d30a0fff1a17cba1cd0c"
 
@@ -1237,12 +1237,12 @@ gulp-jsonlint@^1.2.0:
     map-stream "^0.1.0"
     through2 "2.0.3"
 
-gulp-lesshint@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/gulp-lesshint/-/gulp-lesshint-2.1.0.tgz#175f983a6fd4fb999863620a5526a1c60444f14a"
+gulp-lesshint@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-lesshint/-/gulp-lesshint-3.0.0.tgz#7038030dd62b45421f9e89e976be6e6c9c6325f5"
   dependencies:
-    lesshint "^2.0.0"
-    lesshint-reporter-stylish "^1.0.0"
+    lesshint "^3.0.0"
+    lesshint-reporter-stylish "^2.0.0"
     plugin-error "^0.1.2"
     through2 "^2.0.0"
 
@@ -1756,29 +1756,26 @@ lcid@^1.0.0:
   dependencies:
     invert-kv "^1.0.0"
 
-lesshint-reporter-stylish@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/lesshint-reporter-stylish/-/lesshint-reporter-stylish-1.0.0.tgz#b66d9730048957e756887bf79bf48bf82ca98987"
+lesshint-reporter-stylish@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/lesshint-reporter-stylish/-/lesshint-reporter-stylish-2.0.0.tgz#78cc1eb19d1568d692c945727f725ae5ba069424"
   dependencies:
     chalk "^1.1.3"
 
-lesshint@^2.0.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/lesshint/-/lesshint-2.4.0.tgz#53878cdba2c2b131ab22a6c14350d17cb5ab7f19"
+lesshint@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/lesshint/-/lesshint-3.0.1.tgz#712628b525349a29c8562162c7e367ac7b3d630d"
   dependencies:
     commander "^2.8.0"
-    exit "^0.1.2"
     lodash.merge "^4.0.1"
     lodash.sortby "^4.0.1"
     minimatch "^3.0.2"
     postcss "^5.0.19"
     postcss-less "^0.14.0"
     postcss-selector-parser "^2.0.0"
-    postcss-values-parser "^0.1.7"
+    postcss-values-parser "~1.1.0"
     rcfinder "^0.1.8"
     strip-json-comments "^2.0.0"
-    vow "^0.4.9"
-    vow-fs "^0.3.4"
 
 levn@^0.3.0, levn@~0.3.0:
   version "0.3.0"
@@ -2375,9 +2372,9 @@ postcss-selector-parser@^2.0.0:
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
-postcss-values-parser@^0.1.7:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/postcss-values-parser/-/postcss-values-parser-0.1.8.tgz#6dfb2c606b72b9196f87f32a717c23e31d01350c"
+postcss-values-parser@~1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/postcss-values-parser/-/postcss-values-parser-1.1.0.tgz#ab1d2d51a961a8bb970fbc84a16c1ff76cf3b287"
   dependencies:
     flatten "^1.0.2"
     indexes-of "^1.0.1"
@@ -3031,10 +3028,6 @@ util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
 
-uuid@^2.0.2:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
-
 uuid@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.0.1.tgz#6544bba2dfda8c1cf17e629a3a305e2bb1fee6c1"
@@ -3099,25 +3092,6 @@ vinyl@^1.0.0:
     clone "^1.0.0"
     clone-stats "^0.0.1"
     replace-ext "0.0.1"
-
-vow-fs@^0.3.4:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/vow-fs/-/vow-fs-0.3.6.tgz#2d4c59be22e2bf2618ddf597ab4baa923be7200d"
-  dependencies:
-    glob "^7.0.5"
-    uuid "^2.0.2"
-    vow "^0.4.7"
-    vow-queue "^0.4.1"
-
-vow-queue@^0.4.1:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/vow-queue/-/vow-queue-0.4.2.tgz#e7fe17160e15c7c4184d1b666a9bc64e18e30184"
-  dependencies:
-    vow "~0.4.0"
-
-vow@^0.4.7, vow@^0.4.9, vow@~0.4.0:
-  version "0.4.13"
-  resolved "https://registry.yarnpkg.com/vow/-/vow-0.4.13.tgz#e7c14f1bd9c8be0e7359a4597fe2d1ef6d1a7e88"
 
 which@^1.2.12:
   version "1.2.12"
