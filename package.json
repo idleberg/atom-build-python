@@ -5,7 +5,7 @@
   "repository": "https://github.com/idleberg/atom-build-python",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode none",
+    "build": "webpack --mode production",
     "dev": "webpack --mode none --watch",
     "lint": "eslint ./src",
     "test": "npm run lint"
