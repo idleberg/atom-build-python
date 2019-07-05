@@ -22,6 +22,9 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "activationHooks": [
+    "language-python:grammar-used"
+  ],
   "providedServices": {
     "builder": {
       "description": "Compiles Python",
