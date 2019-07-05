@@ -4,6 +4,12 @@
   "description": "Atom Build provider for python/python3/py, compiles Python",
   "repository": "https://github.com/idleberg/atom-build-python",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode none",
+    "dev": "webpack --mode none --watch",
+    "lint": "eslint ./src",
+    "test": "npm run lint"
+  },
   "keywords": [
     "buildprovider",
     "compile",
@@ -28,22 +34,21 @@
     "build"
   ],
   "dependencies": {
-    "atom-package-deps": "^4.3.1"
+    "atom-package-deps": "^5.1.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.0.2",
-    "coffeelint-stylish": "^0.1.2",
-    "eslint": "^4.11.0",
+    "@babel/core": "^7.4.5",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.0.0",
     "eslint-config-atom-build": "^4.0.0",
-    "gulp": "github:gulpjs/gulp#4.0",
-    "gulp-coffeelint": "^0.6.0",
-    "gulp-debug": "^3.1.0",
-    "gulp-jshint": "^2.0.4",
-    "gulp-jsonlint": "^1.2.0",
-    "gulp-lesshint": "^4.0.0",
-    "jshint": "^2.9.5"
+    "husky": "^3.0.0",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5"
   },
-  "scripts": {
-    "test": "gulp lint"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   }
 }

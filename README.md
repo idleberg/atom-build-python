@@ -1,11 +1,10 @@
 # build-python
 
-[![apm](https://img.shields.io/apm/l/build-python.svg?style=flat-square)](https://atom.io/packages/build-python)
-[![apm](https://img.shields.io/apm/v/build-python.svg?style=flat-square)](https://atom.io/packages/build-python)
-[![apm](https://img.shields.io/apm/dm/build-python.svg?style=flat-square)](https://atom.io/packages/build-python)
-[![Travis](https://img.shields.io/travis/idleberg/atom-build-python.svg?style=flat-square)](https://travis-ci.org/idleberg/atom-build-python)
-[![David](https://img.shields.io/david/idleberg/atom-build-python.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-python)
-[![David](https://img.shields.io/david/dev/idleberg/atom-build-python.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-python?type=dev)
+[![apm](https://flat.badgen.net/apm/license/build-python)](https://atom.io/packages/build-python)
+[![apm](https://flat.badgen.net/apm/v/build-python)](https://atom.io/packages/build-python)
+[![apm](https://flat.badgen.net/apm/dl/build-python)](https://atom.io/packages/build-python)
+[![CircleCI](https://flat.badgen.net/circleci/github/idleberg/atom-build-python)](https://circleci.com/gh/idleberg/atom-build-python)
+[![David](https://flat.badgen.net/david/dep/idleberg/atom-build-python)](https://david-dm.org/idleberg/atom-build-python)
 
 [Atom Build](https://atombuild.github.io/) provider for `python`/`python3`/`py`, compiles Python. Supports the [linter](https://atom.io/packages/linter) package for error highlighting.
 
