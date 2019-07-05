@@ -6,7 +6,7 @@
 [![CircleCI](https://flat.badgen.net/circleci/github/idleberg/atom-build-python)](https://circleci.com/gh/idleberg/atom-build-python)
 [![David](https://flat.badgen.net/david/dep/idleberg/atom-build-python)](https://david-dm.org/idleberg/atom-build-python)
 
-[Atom Build](https://atombuild.github.io/) provider for `python`/`python3`/`py`, compiles Python. Supports the [linter](https://atom.io/packages/linter) package for error highlighting.
+[Atom Build](https://atombuild.github.io/) provider for `python`/`python3`/`py`, runs Python. Supports the [linter](https://atom.io/packages/linter) package for error highlighting.
 
 ## Installation
 
