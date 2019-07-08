@@ -5,5 +5,4 @@ npm-debug.log*
 vendor/
 
 # Project specific
-*.js.map
 todo.md
