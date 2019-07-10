@@ -40,13 +40,13 @@
     "atom-package-deps": "^5.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
+    "@babel/core": "^7.5.4",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "eslint": "^6.0.0",
     "eslint-config-atom-build": "^4.0.0",
     "husky": "^3.0.0",
-    "webpack": "^4.35.0",
+    "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5"
   },
   "husky": {
