@@ -2,8 +2,9 @@
 
 import { configSchema, getConfig } from './config';
 import { EventEmitter } from 'events';
-import { satisfyDependencies, which } from './util';
+import { satisfyDependencies } from 'atom-satisfy-dependencies';
 import { spawnSync } from 'child_process';
+import { which } from './util';
 
 export { configSchema as config };
 
@@ -94,6 +95,6 @@ export function provideBuilder() {
 // This package depends on build, make sure it's installed
 export async function activate() {
   if (getConfig('manageDependencies') === true) {
-    satisfyDependencies();
+    satisfyDependencies('build-python');
   }
 }
