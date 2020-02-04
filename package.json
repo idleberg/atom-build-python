@@ -37,7 +37,6 @@
     "build"
   ],
   "dependencies": {
-    "atom-package-deps": "^5.1.0",
     "atom-satisfy-dependencies": "^0.2.1"
   },
   "devDependencies": {
