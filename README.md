@@ -76,7 +76,3 @@ Here's a reminder of the default shortcuts you can use with this package:
 ## License
 
 This work is licensed under the [The MIT License](LICENSE.md).
-
-## Donate
-
-You are welcome to support this project using [Flattr](https://flattr.com/submit/auto?user_id=idleberg&url=https://github.com/idleberg/atom-build-python) or Bitcoin `17CXJuPsmhuTzFV2k4RKYwpEHVjskJktRd`
