@@ -34,7 +34,7 @@
     }
   },
   "package-deps": [
-    "build"
+    "buildium"
   ],
   "dependencies": {
     "atom-satisfy-dependencies": "^0.2.1"
