@@ -4,5 +4,8 @@
   "rules": {
     "consistent-return": 0,
     "no-console": 0
-  }
+  },
+  "ignorePatterns": [
+    "/lib"
+  ]
 }
