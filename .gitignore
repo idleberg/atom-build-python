@@ -3,6 +3,7 @@ bower_components/
 node_modules/
 npm-debug.log*
 vendor/
+yarn.lock
 
 # Project specific
 todo.md
