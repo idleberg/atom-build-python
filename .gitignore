@@ -6,4 +6,5 @@ vendor/
 yarn.lock
 
 # Project specific
+lib/*LICENSE.txt
 todo.md
