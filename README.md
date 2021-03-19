@@ -20,10 +20,15 @@ Install `build-python` from Atom's [Package Manager](http://flight-manual.atom.i
 
 Change to your Atom packages directory:
 
-```bash
-# Windows
-$ cd %USERPROFILE%\.atom\packages
+```powershell
+# Windows Powershell
+cd $Env:USERPROFILE\.atom\packages
 
+# Windows Command Prompt
+$ cd %USERPROFILE%\.atom\packages
+```
+
+```bash
 # Linux & macOS
 $ cd ~/.atom/packages/
 ```

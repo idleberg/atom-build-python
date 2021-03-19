@@ -1,5 +1,3 @@
-'use babel';
-
 import { configSchema, getConfig } from './config';
 import { EventEmitter } from 'events';
 import { satisfyDependencies } from 'atom-satisfy-dependencies';

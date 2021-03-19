@@ -5,6 +5,9 @@ npm-debug.log*
 vendor/
 yarn.lock
 
+# Development
+.eslintcache
+
 # Project specific
 lib/*LICENSE.txt
 todo.md
