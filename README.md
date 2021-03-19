@@ -80,4 +80,4 @@ Here's a reminder of the default shortcuts you can use with this package:
 
 ## License
 
-This work is licensed under the [The MIT License](LICENSE.md).
+This work is licensed under the [The MIT License](LICENSE).
