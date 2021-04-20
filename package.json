@@ -38,7 +38,9 @@
     "buildium"
   ],
   "dependencies": {
-    "atom-satisfy-dependencies": "^0.3.0"
+    "@atxm/developer-console": "^0.5.0",
+    "atom-satisfy-dependencies": "^0.3.0",
+    "which": "^2.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
