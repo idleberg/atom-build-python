@@ -1,9 +1,9 @@
-import meta from '../package.json';
 import { configSchema, getConfig } from './config';
 import { EventEmitter } from 'events';
 import { satisfyDependencies } from 'atom-satisfy-dependencies';
-import { spawnSync } from 'child_process';
-import { which } from './util';
+import Logger from './log';
+import meta from '../package.json';
+import which from 'which';
 
 export { configSchema as config };
 
@@ -23,13 +23,19 @@ export function provideBuilder() {
 
     isEligible() {
       if (getConfig('alwaysEligible') === true) {
+        Logger.log('Always eligible');
         return true;
       }
 
       const pythonVersion = getConfig('pythonVersion');
-      const whichCmd = spawnSync(which(), [pythonVersion]);
 
-      return (whichCmd.stdout && whichCmd.stdout.toString().length) ? true : false;
+      if (which.sync(pythonVersion, { nothrow: true })) {
+        Logger.log('Build provider is eligible');
+        return true;
+      }
+
+      Logger.error('Build provider isn\'t eligible');
+      return false;
     }
 
     settings() {
