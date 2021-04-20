@@ -1,9 +1,7 @@
-version: 2
-jobs:
-  build:
-    working_directory: ~/repo
-    docker:
-      - image: circleci/node:latest
+version: 2.1
+
+commands:
+  run-test:
     steps:
       - checkout
       - restore_cache:
@@ -11,12 +9,35 @@ jobs:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
           name: Install Node dependencies
-          command: npm install
+          command: npm ci
       - save_cache:
           name: Cache npm Package Data
           key: dependency-cache-{{ checksum "package.json" }}
           paths:
             - ./node_modules
       - run:
-          name: Run Tests
+          name: Lint Source
           command: npm run test
+      - run:
+          name: Build Source
+          command: npm run build
+
+jobs:
+  node-latest:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - run-test
+
+  node-lts:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - run-test
+
+workflows:
+  node-run-tests:
+    jobs:
+    - node-latest
+    - node-lts
+  version: 2
