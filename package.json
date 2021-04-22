@@ -26,6 +26,9 @@
   "activationHooks": [
     "language-python:grammar-used"
   ],
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
   "providedServices": {
     "builder": {
       "description": "Runs Python",
