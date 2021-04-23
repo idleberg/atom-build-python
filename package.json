@@ -5,10 +5,13 @@
   "repository": "https://github.com/idleberg/atom-build-python",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "npm run clean && rollup --config",
+    "clean": "rimraf ./lib",
     "dev": "npm run start",
-    "lint": "eslint ./src --ignore-path .gitignore",
-    "start": "webpack --mode none --watch",
+    "lint:md": "remark . --quiet --frail --ignore-path .gitignore",
+    "lint:js": "eslint ./src --ignore-path .gitignore",
+    "lint": "npm-run-all --parallel lint:*",
+    "start": "rollup --watch --config",
     "test": "npm run lint"
   },
   "keywords": [
@@ -28,7 +31,7 @@
   ],
   "providedServices": {
     "builder": {
-      "description": "Runs Python",
+      "description": "Runs PowerShell scripts",
       "versions": {
         "2.0.0": "provideBuilder"
       }
@@ -46,18 +49,27 @@
   ],
   "dependencies": {
     "@atxm/developer-console": "^0.5.0",
+    "atom-package-deps": "^7.2.2",
     "atom-satisfy-dependencies": "^0.3.0",
     "which": "^2.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.13.16",
     "@babel/eslint-parser": "^7.13.10",
-    "babel-loader": "^8.0.6",
-    "eslint": "^7.22.0",
-    "husky": ">= 4 <5",
-    "lint-staged": ">=10",
-    "webpack": "^5.26.3",
-    "webpack-cli": "^4.5.0"
+    "@babel/plugin-proposal-optional-chaining": "^7.13.8",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "eslint": "^7.2.2",
+    "eslint-plugin-json": "^2.1.2",
+    "husky": ">=4 <5",
+    "lint-staged": "^10.5.4",
+    "npm-run-all": "^4.1.5",
+    "remark-cli": "^9.0.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.42.0",
+    "rollup-plugin-terser": "^7.0.2"
   },
   "husky": {
     "hooks": {
