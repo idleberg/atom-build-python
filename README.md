@@ -50,6 +50,12 @@ Inside the cloned directory, install Node dependencies:
 $ yarn || npm install
 ```
 
+You should now be setup to build the package:
+
+```bash
+$ yarn build || npm run build
+```
+
 ## Usage
 
 ### Build
