@@ -2,7 +2,7 @@ import { configSchema, getConfig } from './config';
 import { EventEmitter } from 'events';
 import { satisfyDependencies } from 'atom-satisfy-dependencies';
 import Logger from './log';
-import meta from '../package.json';
+import { name } from '../package.json';
 import which from 'which';
 
 export { configSchema as config };
@@ -100,6 +100,6 @@ export function provideBuilder() {
 // This package depends on build, make sure it's installed
 export async function activate() {
   if (getConfig('manageDependencies') === true) {
-    satisfyDependencies(meta.name);
+    satisfyDependencies(name);
   }
 }
