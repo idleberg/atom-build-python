@@ -15,7 +15,6 @@ build({
   outfile: 'lib/provider.js',
   platform: 'node',
   sourcemap: true,
-  target: 'es2018',
   watch: process.env.ESBUILD_WATCH && {
     onRebuild(error) {
       if (error) {
